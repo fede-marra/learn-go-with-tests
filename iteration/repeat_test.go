@@ -6,8 +6,8 @@ import (
 )
 
 func TestRepeat(t *testing.T) {
-	char := "y"
-	cant := 5
+	char := "t"
+	cant := 9
 	repeated := Repeat(char, cant)
 	expected := strings.Repeat(char, cant)
 
@@ -16,8 +16,8 @@ func TestRepeat(t *testing.T) {
 	}
 }
 
-//func BenchmarkRepeat(b *testing.B) {
-//	for i := 0; i < b.N; i++ {
-//		Repeat((char,cant))
-//	}
-//}
+// func BenchmarkRepeat(b *testing.B) {
+// 	for i := 0; i < b.N; i++ {
+// 		Repeat(())
+// 	}
+// }
