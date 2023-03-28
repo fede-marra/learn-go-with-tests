@@ -16,8 +16,10 @@ func TestRepeat(t *testing.T) {
 	}
 }
 
-// func BenchmarkRepeat(b *testing.B) {
-// 	for i := 0; i < b.N; i++ {
-// 		Repeat(())
-// 	}
-// }
+ func BenchmarkRepeat(b *testing.B) {
+	char := "t"
+	cant := 9
+ 	for i := 0; i < b.N; i++ {
+ 		Repeat(char, cant)
+ 	}
+ }
